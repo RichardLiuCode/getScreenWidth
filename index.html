@@ -9,12 +9,14 @@
     style="font-family:arial;text-align:center;display:flex;justify-content:center;align-items:center;width:100%;height:100vh;margin:0px;">
     <div>
         <h1>Your screen's size is:</h1>
-        <p style="font-size:30px;" id="display"></p>
+        <p style="font-size:30px;" id="displayWidth"></p>
+        <p style="font-size:30px;" id="displayHeight"></p>
     </div>
 </div>
 
 <script>
-    document.getElementById("display").innerHTML = "Width: " + window.screen.width + "<br>" + "Height: " + window.screen.height;
+    document.getElementById("displayWidth").innerText = window.screen.width;
+    document.getElementById("displayHeight").innerText = window.screen.height;
 </script>
 
 </html>
